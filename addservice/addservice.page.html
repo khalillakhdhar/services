@@ -1,0 +1,43 @@
+<ion-content>
+  <div class="padding">
+  <div class="logo">
+    <ion-icon color="light" name="person-circle-outline"></ion-icon>
+  </div>
+  
+  <ion-text color="light">
+    <h5>Ajouter des service à votre profile</h5>
+  </ion-text>
+
+
+  <ion-item>
+    <ion-label color="light" position="floating">Titre</ion-label>
+    <ion-icon color="light"slot="start" name="person-outline"></ion-icon>
+    <ion-input color="light" type="text" [(ngModel)]="service.titre"  ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="light" position="floating">description</ion-label>
+    <ion-icon color="light"slot="start" name="person-outline"></ion-icon>
+    <ion-input color="light" type="text" [(ngModel)]="service.description"  ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="light" position="floating">emplacement</ion-label>
+    <ion-icon color="light"slot="start" name="person-outline"></ion-icon>
+    <ion-input color="light" type="text" [(ngModel)]="service.local"  ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="light" position="floating">Prix (en dinar)</ion-label>
+    <ion-icon color="light"slot="start" name="person-outline"></ion-icon>
+    <ion-input color="light" type="number" min="1" [(ngModel)]="service.prix"  ></ion-input>
+  </ion-item>
+
+ 
+
+    <br>
+    <ion-button   color="tertiary" expand="block" shape="round" (click)="addservice()">
+      <ion-icon slot="start" name="download-outline"></ion-icon>
+      Ajouter
+    </ion-button>
+
+  </div>
+</ion-content>  
+ 
