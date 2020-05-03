@@ -1,0 +1,62 @@
+.header {
+    background-color: #3366ff;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 27px;
+    border-radius: 49% / 22%;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+   }
+.title {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    
+   }
+ion-input {
+    background-color: white;
+    border-radius: 5px;
+    --padding-start: 7px;
+    box-shadow: 2px 2px 56px #00000099;
+   }
+.img-box{
+   border-radius: 7px;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    border: 0;
+   }
+ion-col img{
+      border-radius: inherit;// l'image prend l'arrondit de la boite
+     }
+.categorie h5{
+   color: white;
+   text-shadow: 2px 2px 6px black;
+   padding-left: 45px;
+   font-size: 1em;
+   margin-top: -25px;
+   font-weight: bold;
+    }
+.badge{
+       margin-top: -30px;
+       padding-left: 11px;
+    }
+/* Morph 
+.morph div img {
+   /* width: 200px;
+    height: 150px;
+    -webkit-filter: grayscale(0) blur(0px);
+    filter: grayscale(0) blur(0px);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+   
+  .morph div:hover img {
+   /* width: 150px; /* on affiche l'image au carré 
+   /* height: 150px; 
+    border-radius: 50%;  /* on arrondit l'image 
+    -webkit-transform: rotate(360deg); /* rotation de l'image 
+    transform: rotate(360deg);
+  }*/
+  

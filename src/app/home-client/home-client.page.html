@@ -1,0 +1,124 @@
+<ion-content>
+  <div class="header">
+    <h1 class="title">Services à Domicile</h1>
+    <ion-input placeholder="De quel service avez-vous besoin ?"></ion-input>
+  </div>
+
+  <div class="ion-padding">
+    <ion-text color="medium">
+      <h6>Pour chaque situation, trouvez l'artisan idéal
+        pour tous les services du quotidien.</h6>
+    </ion-text>
+    <ion-grid>
+     <div *ngFor="let c of categories"> <ion-row>
+          <div class="categorie">
+          <div class="img-box">
+          <img [src]="c.categorie" >
+          </div>
+          <div class="badge">
+          <ion-badge color="primary"><ion-icon name="people"></ion-icon> 0</ion-badge>
+          </div>
+          <h5>{{c.titre}}</h5>
+          </div>
+      
+       
+      </ion-row></div>
+      <!--ion-row>
+        <ion-col>
+          <div class="categorie">
+          <div class="img-box">
+          <img src="../../assets/icon/Amenagement.jpg">
+          </div>
+          <div class="badge">
+          <ion-badge color="primary"><ion-icon name="people"></ion-icon> 0</ion-badge>
+          </div>
+          <h5>Aménagement</h5>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="categorie">
+          <div class="img-box">
+          <img src="../../assets/icon/Renovation.jpg">
+          </div>
+          <div class="badge">
+          <ion-badge color="primary"><ion-icon name="people"></ion-icon> 0</ion-badge>
+          </div>
+          <h5>Rénovation</h5>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div class="categorie">
+          <div class="img-box">
+          <img src="../../assets/icon/Electromenager.jpg">
+          </div>
+          <div class="badge">
+          <ion-badge color="primary"><ion-icon name="people"></ion-icon> 0</ion-badge>
+          </div>
+          <h5>Electroménager</h5>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="categorie">
+          <div class="img-box">
+          <img src="../../assets/icon/Jardinage.jpg">
+          </div>
+          <div class="badge">
+          <ion-badge color="primary"><ion-icon name="people"></ion-icon> 0</ion-badge>
+          </div>
+          <h5>Jardinage</h5>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div class="categorie">
+          <div class="img-box">
+          <img src="../../assets/icon/Menage.jpg">
+          </div>
+          <div class="badge">
+          <ion-badge color="primary"><ion-icon name="people"></ion-icon> 0</ion-badge>
+          </div>
+          <h5>Ménage</h5>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="categorie">
+          <div class="img-box">
+          <img src="../../assets/icon/Demenagement.jpg">
+          </div>
+          <div class="badge">
+          <ion-badge color="primary"><ion-icon name="people"></ion-icon> 0</ion-badge>
+          </div>
+          <h5>Déménagement</h5>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div class="categorie">
+          <div class="img-box">
+          <img src="../../assets/icon/garde.jpg">
+          </div>
+          <div class="badge">
+          <ion-badge color="primary"><ion-icon name="people"></ion-icon> 0</ion-badge>
+          </div>
+          <h5>garde</h5>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="categorie">
+          <div class="img-box">
+          <img src="../../assets/icon/concierge.jpg">
+          </div>
+          <div class="badge">
+          <ion-badge color="primary"><ion-icon name="people"></ion-icon> 0</ion-badge>
+          </div>
+          <h5>concierge</h5>
+          </div>
+        </ion-col>
+      </ion-row-->
+    </ion-grid>
+</div>
+</ion-content>
