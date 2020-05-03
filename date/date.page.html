@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>date</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Journées de travail</ion-label>
+    <ion-select>
+      <ion-select-option >Lundi</ion-select-option>
+      <ion-select-option >Mardi</ion-select-option>
+      <ion-select-option >Mercredi</ion-select-option>
+      <ion-select-option >Jeudi</ion-select-option>
+      <ion-select-option >Vendredi</ion-select-option>
+      <ion-select-option >Samedi</ion-select-option>
+      <ion-select-option >Dimanche</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Heure début de travail</ion-label>
+    <ion-icon slot="start" name="alarm-outline"></ion-icon>
+    <ion-datetime displayFormat="HH:mm" ></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label  position="floating">Heure fin de travail</ion-label>
+    <ion-icon slot="start" name="alarm-outline"></ion-icon>
+    <ion-datetime displayFormat="HH:mm" ></ion-datetime>
+  </ion-item>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="primary">   
+      <ion-icon name="arrow-redo-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="arrow-undo-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

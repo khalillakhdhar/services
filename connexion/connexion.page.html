@@ -1,0 +1,49 @@
+<ion-content >
+  <div class="padding">
+    
+    <div class="logo">
+     <img src="../../assets/icon/logo.png"> 
+    </div>
+
+    <ion-item >
+      <ion-label color="light" position="floating">Email</ion-label>
+      <ion-icon color="light" slot="start" name="mail-outline"></ion-icon>
+      <ion-input color="light" type="mail" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="light" position="floating">Mot de passe</ion-label>
+      <ion-icon color="light" slot="start" name="lock-closed-outline"></ion-icon>
+      <ion-input color="light" type="password" [(ngModel)]="user.password"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-button color="light" slot="end" fill="clear" (click)="mdpoublie()">Mot de passe oublié ?</ion-button>
+    </ion-item>
+    <ion-button color="tertiary" expand="block" shape="round" (click)="connexion()">
+      <ion-icon color="light" slot="start" name="enter-outline"></ion-icon>
+      Connexion
+  </ion-button>
+    <br>
+    <ion-button color="tertiary" expand="block" shape="round" (click)="inscription()">
+      <ion-icon color="light" slot="start" name="download-outline"></ion-icon>
+      Inscription
+    </ion-button>
+    <ion-item lines="none">
+      <ion-label color="light" text-center>Ou connectez-vous avec</ion-label>
+    </ion-item>
+
+    <div class="flex">
+      <ion-button color="facebook" shape="round">
+        <ion-icon slot="start" name="logo-facebook"></ion-icon>
+        Facebook
+      </ion-button>
+      <ion-button color="google" color="youtube" shape="round">
+        <ion-icon slot="start" name="logo-google"></ion-icon>
+        Google
+      </ion-button>
+    </div>
+    <ion-item lines="none">
+      <ion-button color="light" slot="end" fill="clear" (click)="visiteur()">Continuer en tent que visiteur ?</ion-button>
+    </ion-item>
+  </div>
+
+</ion-content>
