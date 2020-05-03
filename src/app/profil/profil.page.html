@@ -1,0 +1,111 @@
+<ion-content>
+  <div class="padding">
+  <div class="logo">
+    <ion-icon color="light" name="person-circle-outline"></ion-icon>
+  </div>
+  
+  <ion-text color="light">
+    <h5>Profile</h5>
+  </ion-text>
+
+
+  <ion-item>
+    <ion-label color="light" position="floating">Nom</ion-label>
+    <ion-icon color="light"slot="start" name="person-outline"></ion-icon>
+    <ion-input color="light" type="text" [(ngModel)]="user.nom"  ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="light" position="floating">Prénom</ion-label>
+    <ion-icon color="light"slot="start" name="person-outline"></ion-icon>
+    <ion-input color="light" type="text" [(ngModel)]="user.prenom"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="light" position="floating">Email</ion-label>
+    <ion-icon color="light" slot="start" name="mail-outline"></ion-icon>
+    <ion-input color="light" type="mail" [(ngModel)]="user.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="light" position="floating">Mot de passe</ion-label>
+    <ion-icon color="light" slot="start" name="lock-closed-outline"></ion-icon>
+    <ion-input color="light" type="password" [(ngModel)]="user.password"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="light" position="floating">Confirmer mot de passe</ion-label>
+    <ion-icon color="light" slot="start" name="lock-closed-outline"></ion-icon>
+    <ion-input color="light" type="password" [(ngModel)]="rmdp"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label  color="light" position="floating">téléphone</ion-label>
+    <ion-icon color="light" slot="start" name="call-outline"></ion-icon>
+    <ion-input color="light" type="text" [(ngModel)]="user.telephone"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="light" position="floating">Adresse</ion-label>
+    <ion-icon color="light" slot="start" name="location-outline"></ion-icon>
+    <ion-input color="light" type="text" [(ngModel)]="user.adresse"></ion-input>
+  </ion-item>
+
+<!--
+  <ion-item>
+    <ion-label color="light">Catégorie Service</ion-label>
+    <ion-select [(ngModel)]="user.service">
+      <ion-select-option value="Electricité">Electricité</ion-select-option>
+      <ion-select-option value="Plomberie">Plomberie</ion-select-option>
+      <ion-select-option value="Aménagement">Aménagement</ion-select-option>
+      <ion-select-option value="Rénovation">Rénovation</ion-select-option>
+      <ion-select-option value="Jardinage">Jardinage</ion-select-option>
+      <ion-select-option value="Ménage">Ménage</ion-select-option>
+      <ion-select-option value="Démenagement">Déménagement</ion-select-option>
+      <ion-select-option value="Eléctroménage">Eléctroménage</ion-select-option>
+      <ion-select-option value="Plomberie">Garde</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label color="light" position="floating">Prix horaire</ion-label>
+    <ion-icon color="light"slot="start" name="person-outline"></ion-icon>
+    <ion-input color="light" type="number" [(ngModel)]="user.prix"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="light">Journées de travail</ion-label>
+    <ion-select [(ngModel)]="user.jour">
+      <ion-select-option value="Electricité">Lundi</ion-select-option>
+      <ion-select-option value="Plomberie">Mardi</ion-select-option>
+      <ion-select-option value="Aménagement">Mercredi</ion-select-option>
+      <ion-select-option value="Aménagement">Jeudi</ion-select-option>
+      <ion-select-option value="Rénovation">Vendredi</ion-select-option>
+      <ion-select-option value="Jardinage">Samedi</ion-select-option>
+      <ion-select-option value="Ménage">Dimanche</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label color="light" position="floating">Heure début de travail</ion-label>
+    <ion-icon color="light"slot="start" name="person-outline"></ion-icon>
+    <ion-datetime displayFormat="HH:mm" color="light"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label color="light" position="floating">Heure fin de travail</ion-label>
+    <ion-icon color="light"slot="start" name="person-outline"></ion-icon>
+    <ion-datetime displayFormat="HH:mm" color="light"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label color="light" position="floating">Description</ion-label>
+    <ion-icon  color="light"slot="start" name="document-text-outline"></ion-icon>
+    <ion-textarea color="light"></ion-textarea>
+  </ion-item>
+-->
+    
+
+    <br>
+    <ion-button   color="tertiary" expand="block" shape="round" [disabled]="user.password!=rmdp" (click)="modifier()">
+      <ion-icon slot="start" name="download-outline"></ion-icon>
+Modifier    </ion-button>
+
+  </div>
+</ion-content>  
+ 
