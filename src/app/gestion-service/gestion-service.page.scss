@@ -1,0 +1,28 @@
+.header {
+    background-color: #3366ff;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 27px;
+    border-radius: 49% / 22%;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+   }
+.title {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+   }
+/*ion-input {
+    background-color: white;
+    border-radius: 5px;
+    --padding-start: 7px;
+    box-shadow: 2px 2px 56px #00000099;
+   }*/ 
+ion-item {
+    --ion-background-color: #f2f2f2;
+    border-radius: 30px;
+    margin-top: 10px;
+    border: 1px solid 	#a6a6a6;
+    //background-image:url("../../assets/icon/Electricite.jpg");
+}

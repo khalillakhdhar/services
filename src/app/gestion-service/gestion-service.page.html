@@ -1,0 +1,61 @@
+<ion-content>
+  <div class="header">
+    <h1 class="title">Mes Services</h1>
+    <ion-input placeholder="Quel est votre service ?"></ion-input>
+  </div>
+  <div class="ion-padding">
+    <ion-text color="medium">
+      <h6>Rendez des services et augmentez vos revenus.</h6>
+    </ion-text>
+    <ion-item lines="none" [hidden]="!cache" *ngFor="let ser of services">
+        <ion-label>
+          <h2>{{ ser.titre }}</h2> </ion-label>
+          <button size="default" color="success" ion-button icon-end>
+            <ion-icon color="success" (click)="update(ser)" name="eye-outline"></ion-icon>
+          </button><br>
+          <button (click)="delete(ser.id)" size="default" color="success" ion-button icon-end>
+                        <ion-icon size="default" color="danger" name="trash-outline"></ion-icon>
+                      </button>
+    </ion-item>
+    <div [hidden]="cache">
+
+      <ion-item>
+        <ion-label  position="floating">Titre</ion-label>
+        <ion-icon slot="start" name="person-outline"></ion-icon>
+        <ion-input  type="text" [(ngModel)]="service.titre"  ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label  position="floating">description</ion-label>
+        <ion-icon slot="start" name="person-outline"></ion-icon>
+        <ion-input  type="text" [(ngModel)]="service.description"  ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label  position="floating">emplacement</ion-label>
+        <ion-icon slot="start" name="person-outline"></ion-icon>
+        <ion-input  type="text" [(ngModel)]="service.local"  ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label  position="floating">Prix (en dinar)</ion-label>
+        <ion-icon slot="start" name="person-outline"></ion-icon>
+        <ion-input  type="number" min="1" [(ngModel)]="service.prix"  ></ion-input>
+      </ion-item>
+    
+     
+    
+        <br>
+        <ion-button   color="tertiary" expand="block" shape="round" (click)="modif()">
+          <ion-icon slot="start" name="download-outline"></ion-icon>
+          modifier
+        </ion-button>
+        <ion-button   color="tertiary" expand="block" shape="round" (click)="annuler()">
+          <ion-icon slot="start" name="refresh-outline"></ion-icon>
+          Annuler
+        </ion-button>
+    </div>
+  </div>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button color="primary">    <!--[disabled]="ctg.isChecked!=true"-->
+        <ion-icon name="arrow-redo-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+</ion-content>
